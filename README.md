@@ -1,7 +1,7 @@
 # Brandon Hopkins - Data Analysis Portfolio
 
 ## About
-Hi, I'm Brandon! I have a technical background with a B.S. in Mechanical Engineering from the University of Michigan - Go Blue! I worked for 6+ years as a design engineer for automotive suppliers, focusing primarily on high speed / high frequency connection systems. I was also part of an advanced development group that worked on R&D and business improvement projects; it was through those experiences that I first was introduced to data analytics! Since then, I have transitioned into becoming a Data Analyst by taking online courses, connecting with professionals, practicing new skills, and completing projects. 
+Hi, I'm Brandon! I have a technical background with a B.S. in Mechanical Engineering from the University of Michigan - Go Blue! I worked for 6+ years as a design engineer for automotive suppliers, focusing primarily on high speed / high frequency connection systems. I was also part of an advanced development group that worked on R&D and business improvement projects; it was through those experiences that I first was introduced to data analytics! Since then, I have turned interest into action and am working to pivot my career from Engineering to Data Analytics by taking online courses, connecting with professionals, practicing new skills, and completing projects. 
 
 This is a repository to showcase skills and share what I have done in the world of Data Analytics. 
 
@@ -14,6 +14,12 @@ This is a repository to showcase skills and share what I have done in the world 
 
 ## Projects
 
+### Chelsea FC Transfer Analysis
+- Data analysis and visualization project completed using Power BI that analyzes transfer market data of my favorite soccer team, Chelsea FC, from 2015-2018
+- Imported data from an online transfer mareket database (transfermarkt.com) into Power BI, cleaned data via Power Query and created measures with DAX expressions
+- Created individual reports for each season, as well as a dashboard combining all seasons
+- There are countless factors that impact Premier League performance over the course of a season, however the takeaway from this limited study is that the team performed better in the league in years that both the net spend and average age of incoming transfers were higher. This makes sense, as a more expensive and/or older player typically has more ability (hence the higher fee) or brings more experience to the team.
+
 ### Linkedin Connection Data Visualization
 - Quick and fun data visualization project using Tableau to create a dashboard from profile data extracted from Linkedin
 - The most interesting takeaway from the dashboard is the total connections vs time plot, which visualizes how I have been more active on Linkedin (making more connections) at times when I was either considering or actively looking for a new opportunity
@@ -25,7 +31,6 @@ B.S. in Mechanical Engineering with an Energy Concentration
 
 ## Certificates & Courses
 - Google Data Analytics Professional Certificate
-- Datacamp Data Analyst in Power BI Certificate
 - Hackerrank SQL (Basic)
 - Datacamp Intermediate SQL
 
