@@ -13,6 +13,10 @@ This is a repository to showcase skills and share what I have done in the world 
 5. Contact Information
 
 ## Projects
+###Linkedin Connection Data Visualization
+- Quick and fun data visualization project using Tableau to create a dashboard from profile data extracted from Linkedin
+- The most interesting takeaway from the dashboard is the total connections vs time plot, which visualizes how I have been more active on Linkedin (making more connections) at times when I was either considering or actively looking for a new opportunity
+- The dashboard can be viewed on my Tableau Public profile here: https://public.tableau.com/views/LinkedinConnectionsDashboard/LinkedinDashboard?:language=en-US&:display_count=n&:origin=viz_share_link
 
 ## Education
 University of Michigan - 
