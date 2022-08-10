@@ -5,13 +5,6 @@ Hi, I'm Brandon! I have a technical background with a B.S. in Mechanical Enginee
 
 This is a repository to showcase skills and share what I have done in the world of Data Analytics. 
 
-## Table of Contents
-1. About
-2. Projects
-3. Education
-4. Certificates & Courses
-5. Contact Information
-
 ## Projects
 
 ### Chelsea FC Transfer Analysis
