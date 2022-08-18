@@ -8,7 +8,7 @@ This is a repository to showcase skills and share what I have done in the world 
 ## Projects
 
 ### 2014 Michigan Basketball Analysis
-- Data analysis and visualization project in which I analyzed shooting statistics and created an interactive dashboard for the 2014 Michigan Men's baskteball team that won the Big Ten Conference championship.
+- Data analysis and visualization project in which I analyzed shooting statistics and created an interactive dashboard for the 2014 Michigan Men's basketball team that won the Big Ten Conference championship.
 - Data was accessed via a SQL query of a public database on Big Query; dashboard was created via Power BI.
 - The clear takeaway from this analysis is that field goal percentage has a great impact on overall performance, and when the 2014 Wolverines shot over 43% on any given day, they were heavily favored to win the game.
 
