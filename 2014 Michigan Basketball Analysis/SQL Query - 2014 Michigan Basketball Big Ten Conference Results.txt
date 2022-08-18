@@ -1,0 +1,59 @@
+# The purpose of this query is to summarize the results of the 2013-2014 Michigan Big Ten Conference season. 
+
+# Columns selected from the data source table include game time, teams involved, an IF statement to determine the outcome of the game, and key stats. Created aliases for column names for easier readability.
+SELECT
+  scheduled_date AS Date,
+  a_name AS Opponent,
+  h_name AS Home_Team,
+  a_name AS Away_Team,
+  IF (h_points_game > a_points_game,"Win","Loss") AS Result,
+  h_points_game AS Home_Points_Total,
+  a_points_game AS Away_Points_Total,
+  h_field_goals_pct AS Field_Goal_Percentage,
+  h_three_points_pct AS Three_Point_Percentage,
+  h_free_throws_pct AS Free_Throw_Percentage,
+  h_field_goals_att AS Field_Goal_Attempts,
+  h_three_points_att AS Three_Point_Attempts,
+  h_free_throws_att AS Free_Throw_Attempts
+
+FROM
+  `bigquery-public-data.ncaa_basketball.mbb_games_sr` 
+  
+# Filter results with Michigan as the home team,the season as 2013, and to only include conference games (excluding non-conference and tournament games for this analysis)
+WHERE
+  h_alias = "MICH"
+  AND season = 2013
+  AND conference_game=TRUE 
+
+# Union statement that repeats the select statement above, but filters results to oniy include games with Michigan as the away team. The union statement allows to combine the two select statements so that the query ultimately includes all Michigan conference games (both home and away)
+UNION ALL
+
+# Select same number of columns as the above select statement, but be sure to change from home to away data for opponent name, if statement to determine results, and team statistics - for this statement we want Michigan as the away team so the columns selected must reflect that accordingly
+SELECT
+  scheduled_date,
+  h_name,
+  h_name,
+  a_name,
+  IF (a_points_game > h_points_game, "Win", "Loss"),
+  h_points_game,
+  a_points_game,
+  a_field_goals_pct,
+  a_three_points_pct,
+  a_free_throws_pct,
+  a_field_goals_att,
+  a_three_points_att,
+  a_free_throws_att
+  
+
+FROM
+  `bigquery-public-data.ncaa_basketball.mbb_games_sr` 
+  
+# Same filters as above except with Michigan as the away team
+WHERE
+  a_alias = "MICH"
+  AND season = 2013
+  AND conference_game=TRUE 
+  
+# Organize resulting query by date that the games were played (default is to order by ascending)
+ORDER BY
+  Date;
